@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+class Game {
+private:
+int goals;
+public:
+// constructor used to initialize
+Game() {
+goals = 0;
+}
+// return score
+int getGoals() {
+return goals;
+}
+// increment goal by one
+void incrementGoal() {
+goals++;
+}
+};
+int main() {
+Game football;
+cout << "Number of goals when game is started = " << football.getGoals()
+<< endl;
+football.incrementGoal();
+football.incrementGoal();
+football.incrementGoal();
+cout << "Number of goals a little later = " << football.getGoals() <<
+endl;
+return 0;
+}

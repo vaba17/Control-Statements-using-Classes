@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+int main() {
+std::cout << "Enter a string of words: ";
+std::string str;std::getline(std::cin, str);
+std::cout << "Enter one letter from the string: ";
+char c;
+std::cin >> c;
+size_t count = 0;
+std::string::iterator it;
+for (it = str.begin(); it != str.end(); it++) {
+if (*it == c) {
+++count;
+}
+}
+std::cout << "character " << c << " was found " << count
+<< " times in the string " << str << std::endl;
+return 0;
+}

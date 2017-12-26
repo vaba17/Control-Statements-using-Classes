@@ -1,0 +1,56 @@
+#include<iostream>
+
+using namespace std;
+
+double volume1(double l=10,double b=20,double h=5);
+
+int main()
+
+{
+
+double length;
+
+double width;
+
+double height;
+
+double volume;
+
+cout<<"\n Enter the value of length = ";
+
+cin>>length;
+
+cout<<"\n Enter the value of width = ";
+
+cin>>width;
+
+cout<<"\n Enter the value of heigth = ";
+
+cin>>height;
+
+volume = volume1();
+
+cout<<"\n Volume with no argument passed = "<<volume<<endl;
+
+volume=volume1(length);
+
+cout<<"\n Volume with one argument passed = "<<volume<<endl;
+
+volume=volume1(length,width);
+
+cout<<"\n Volume with two argument passed = "<<volume<<endl;
+
+volume=volume1(length,width,height);
+
+cout<<"\n Volume with all argument passed = "<<volume<<endl;
+return 0;
+
+}
+
+double volume1(double l,double b,double h)
+
+{
+
+return l*b*h;
+
+}
